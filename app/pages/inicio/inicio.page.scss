@@ -1,0 +1,37 @@
+.clw
+{
+    background-color: transparent;
+}
+
+.title{
+   background-color: transparent;
+}
+
+.div-inicio{
+    display: flex;
+    justify-content: space-around;    
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.button-login{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: rgb(97, 59, 59) !important;
+    border-radius: 32px;
+    margin: 20px 10px;
+}
+
+.button-login::hover{
+    color: rgb(208, 208, 208);
+    padding-bottom: 10px;
+}
+
+.text-login{
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: white;
+}

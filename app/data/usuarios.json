@@ -1,0 +1,58 @@
+{
+  "usuarios": [
+    {
+      "id": 0,
+      "name": "juan",
+      "username": "juanperez",
+      "password": "123456",
+      "role": "alumno",
+      "pregunta": "¿Nombre de tu profesor?",
+      "respuesta": "Jaime Flores"
+    },
+    {
+      "name": "kronito",
+      "username": "kronno2",
+      "password": "1234",
+      "role": "alumno",
+      "pregunta": "¿Nombre de tu profesor?",
+      "respuesta": "vivi",
+      "id": 1
+    },
+    {
+      "name": "nicoo",
+      "username": "kronno3",
+      "password": "1234",
+      "role": "alumno",
+      "pregunta": "¿Nombre de tu profesor?",
+      "respuesta": "vivi",
+      "id": 2
+    },
+    {
+      "name": "nicolas acuna",
+      "username": "kronito2p",
+      "password": "vivi",
+      "role": "alumno",
+      "pregunta": "¿Nombre de tu profesor?",
+      "respuesta": "viviana",
+      "id": 3
+    },
+    {
+      "name": "smitgh",
+      "username": "psmith",
+      "password": "duoc1",
+      "role": "profesor",
+      "pregunta": "¿Nombre de tu mamá?",
+      "respuesta": "karla",
+      "id": 4
+    },
+    {
+      "name": "nicolas",
+      "username": "kronno222",
+      "password": "4321",
+      "role": "alumno",
+      "pregunta": "¿Nombre de tu profesor?",
+      "respuesta": "viviana",
+      "id": 5
+    }
+  ]
+}

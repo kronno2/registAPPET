@@ -1,0 +1,36 @@
+<ion-header [translucent]="false">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="warning"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="title">RegistraPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="fullscreen" class="title">RegistraPP</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="div-inicio">
+    <p class="text-login">Selecciona Tu tipo de usuario</p>
+    <ion-button class="button-login" (click)="redirigir('alumno')">
+      Alumno
+    </ion-button>
+    <ion-button class="button-login" (click)="redirigir('profesor')">
+      Profesor
+    </ion-button>
+
+    
+  </div>
+  
+
+  <!-- Agregar imagen -->
+  <div style="position: absolute; top: 0; right: 0; margin: 10px;">
+    <img src="assets/Logo-duoc.jpg" alt="Logo" style="max-height: 50px; max-width: 50px;">
+
+  </div>
+</ion-content>

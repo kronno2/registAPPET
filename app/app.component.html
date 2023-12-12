@@ -1,0 +1,20 @@
+<ion-app>
+  <ion-menu class="clw" contentId="main" menuId="first" side="start" swipe-gesture="false">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>RegisAPP</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-menu-toggle *ngFor="let c of componentes">
+        <ion-item [routerLink]="c.redirecTo" detail="true">
+          <ion-icon slot="start" [name]="c.icon" class="cocl"></ion-icon>
+          {{ c.name }}
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

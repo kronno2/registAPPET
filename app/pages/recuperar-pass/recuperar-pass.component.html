@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true">
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Ingresa tu nombre de usuario: </ion-label>
+      <ion-input type="text" name="txtname" [(ngModel)]="datos.username" placeholder="Ingresa tu nombre de usuario" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="buscarUsuario()" >Buscar Usuario</ion-button>
+    </ion-item>
+  </form>
+
+  <div *ngIf="msgError1"><p>Usuario No encontrado</p></div>
+  <form *ngIf="verPreguntaSeguridad">
+    <ion-item lines="full">
+      <ion-select label="Seleccione una pregunta de seguridad:" placeholder="Seleccione una opcion" [(ngModel)]="datos.pregunta">
+        <ion-select-option value="¿Nombre de tu profesor?">¿Nombre de tu profesor?</ion-select-option>
+        <ion-select-option value="¿Nombre de tu Mascota?">¿Nombre de tu Mascota?</ion-select-option>
+        <ion-select-option value="¿Nombre de tu mamá?">¿Nombre de tu mamá?</ion-select-option>
+        <ion-select-option value="¿Direccion en la que vives?">¿Direccion en la que vives?</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Ingresa tu respuesta de seguridad: </ion-label>
+      <ion-input type="text" name="txtname" [(ngModel)]="datos.respuesta" placeholder="Ingresa tu nombre de usuario" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="validarRespuesta()">Validar</ion-button>
+    </ion-item>
+  </form>
+
+
+  <div *ngIf="msgError1"><p>Datos ingresados son incorrectos</p></div>
+  <form *ngIf="cambiarPass">
+    <ion-item lines="full">
+      <ion-label position="floating">Nueva Contraseña: </ion-label>
+      <ion-input type="password" name="txtname" [(ngModel)]="datos.pass" placeholder="Ingresa tu nueva contraseña" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="cambiarPassword()">Cambiar Contraseña</ion-button>
+    </ion-item>
+  </form>
+</ion-content>

@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>inicio-profesor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-card class="ion-text-center">
+    <ion-card-content>
+      <ion-item>
+        <ion-select placeholder="Asignatura"  [(ngModel)]="usuario.modulo">
+          <ion-select-option value="ProgramaciónMovil">Programación movil</ion-select-option>
+          <ion-select-option value="ProgramaciónBD" >Programación de BD</ion-select-option>
+          <ion-select-option value="Programacion Web" > Programacion Web</ion-select-option>
+          <ion-select-option value="Ingenieria" > Ingenieria de Software</ion-select-option>
+          <ion-select-option value="Calidad" > Calidad de software</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-input disabled [(ngModel)]="usuario.fecha"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input disabled [(ngModel)]="usuario.docente"></ion-input>
+      </ion-item>
+      <ion-button expand="block" class="ion-margin" (click)="generaScan()">
+        Generate QR Code
+      </ion-button>
+      <qrcode [qrdata]="qrCodeString + qrFecha + nombreDocente" [width]="256" [errorCorrectionLevel]="'M'">
+      </qrcode>
+      <ion-button (click)="cerrarSesion()" color="warning" shape="round">
+        Cerrar Sesión
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">inicio-profesor</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>

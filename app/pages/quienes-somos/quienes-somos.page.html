@@ -1,0 +1,41 @@
+<ion-header [translucent]="false">
+  
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="primary"></ion-icon>
+       
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Quienes somos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Quienes somos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <ion-card-header class="encabezado">
+      <ion-card-subtitle style="color:rgb(165, 159, 42); font-weight: bold;"></ion-card-subtitle>
+      <ion-card-title style="color:rgb(127, 80, 255); font-weight: bold;">registrApp</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="contenido">
+      <p class="texto">
+       Una compañia joven con ganas de conquistar el mundo.
+      </p>
+      <img src="assets/quienesSomos.jpeg" class="ion-padding imagen">
+      <ion-button routerLink="/inicio" expand="block" fill="solid" color="warning" shape="round">
+        Volver al inicio
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  <div style="position: absolute; top: 0; right: 0; margin: 10px;">
+    <img src="/assets/Logo-duoc.jpg" alt="Logo" style="max-height: 50px; max-width: 50px;">
+  </div>
+
+
+
+</ion-content>
